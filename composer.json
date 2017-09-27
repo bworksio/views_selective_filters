@@ -1,0 +1,16 @@
+{
+    "name": "bworksio/views_selective_filters",
+    "description": "This module allows to have an exposed filter only show options that belong to result set.",
+    "type": "drupal-module",
+    "keywords": ["drupal"],
+    "homepage": "https://github.com/bworksio/views_selective_filters",
+    "license": "GPL-2.0+",
+    "support": {
+      "issues": "https://github.com/bworksio/views_selective_filters/issues"
+    },
+    "extra": {
+      "branch-alias": {
+        "dev-8.x-1.x": "8.1.x-dev"
+      }
+    }
+  }
