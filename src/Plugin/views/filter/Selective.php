@@ -39,7 +39,7 @@ class Selective extends InOperator {
     parent::init($view, $display, $options);
 
     $this->options['exposed'] = TRUE;
-    $this->realField = $this->options['selective_display_field'];
+    $this->realField = $this->definition['field_base'];
   }
 
   /**
@@ -270,7 +270,7 @@ class Selective extends InOperator {
       'input' => $this->view->getExposedInput(),
       'base_field' => $this->definition['field_base'],
       'real_field' => $this->realField,
-      'field' => $this->field,
+      'field' => $this->options['selective_display_field'],
       'table' => $this->table,
       'ui_name' => $this->adminLabel(),
     )));
